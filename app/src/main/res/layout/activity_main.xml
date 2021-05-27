@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_forecast_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="?attr/colorError"
+            android:visibility="invisible"
+            />
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="top|center_horizontal"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start" >
+
+        <FrameLayout
+            android:id="@+id/FL_nav_settings_option"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#F8F8F8"
+            >
+
+            <Button
+                android:id="@+id/nav_settings_option_button"
+                android:text="@string/nav_settings"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+            android:id="@+id/nav_settings_option"
+            android:text="@string/nav_settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/LL_nav_recent_cities"
+            android:layout_below="@+id/FL_nav_settings_option"
+            >
+            <TextView
+                android:text="@string/recent_cities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_forecast_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL_nav_recent_cities"
+            />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

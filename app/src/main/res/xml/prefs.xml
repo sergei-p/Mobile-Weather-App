@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:title="City"
+        android:key="pref_city"
+        android:defaultValue="Corvallis,OR,US"
+        app:useSimpleSummaryProvider="true"/>
+
+    <ListPreference
+        android:title="Units"
+        android:key="pref_units"
+        android:dialogTitle="Units"
+        android:entries="@array/pref_units_entries"
+        android:entryValues="@array/pref_units_values"
+        android:defaultValue="@string/pref_units_value_fahrenheit"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.HighTempSmall" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/high_temp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TextAppearance.LowTempSmall" parent="TextAppearance.HighTempSmall">
+        <item name="android:textColor">@color/low_temp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TextAppearance.HighTempLarge" parent="TextAppearance.HighTempSmall">
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="TextAppearance.LowTempLarge" parent="TextAppearance.LowTempSmall">
+        <item name="android:textSize">32sp</item>
+    </style>
+</resources>
