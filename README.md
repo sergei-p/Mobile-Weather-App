@@ -1,4 +1,4 @@
-# Mobile Weather App
+# [Mobile Weather App](#Mobile-Weather-App)
 
 ---
 
@@ -19,7 +19,7 @@ Mobile Android App which displays the weather forecast for any city. The weather
 - Retrofit https://square.github.io/retrofit/
 - Room https://developer.android.com/jetpack/androidx/releases/room
 
-[Back To The Top](#Mobile Weather App)
+[Back To The Top](#Mobile-Weather-App)
 
 
 ## How to use
@@ -35,7 +35,7 @@ In order to use the application, you must aquire an API key from the OpenWeather
 
 MIT License
 
-Copyright (c) [2020] [Sergei Poliakov]
+Copyright (c) [2021] [Sergei Poliakov]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -55,7 +55,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#Mobile Weather Ap)
+[Back To The Top](#Mobile-Weather-App)
 
 ---
 
@@ -64,4 +64,4 @@ Name: Sergei Poliakov
 
 GitHub: sergei-p
 
-[Back To The Top](#Mobile Weather App)
+[Back To The Top](#Mobile-Weather-App)
