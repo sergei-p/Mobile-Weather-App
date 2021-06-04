@@ -23,7 +23,7 @@ Mobile Android App which displays the weather forecast for any city. The weather
 
 
 ## How to use
-In order to use the application, you must aquire an API key from the OpenWeather's website and add it on line 53 in MainActivity.java.
+In order to use the application, you must aquire an API key from the OpenWeather's website and add it on line 26 in ForecastRetrievalRepository.java.
 
 `private static final String OPENWEATHER_APPID = " ";`
 
