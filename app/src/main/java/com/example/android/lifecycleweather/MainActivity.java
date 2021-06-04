@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
             ForecastHistoryAdapter.OnForecastHistoryItemClickListener,
             SharedPreferences.OnSharedPreferenceChangeListener {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String OPENWEATHER_APPID = " ";
+    //private static final String OPENWEATHER_APPID = " ";
 
     private ForecastAdapter forecastAdapter;
     private ForecastHistoryAdapter forecastHistoryAdapter;

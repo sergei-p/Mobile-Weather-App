@@ -23,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ForecastRetrievalRepository {
     private static final String TAG = ForecastRetrievalRepository.class.getSimpleName();
     private static final String BASE_URL = "https://api.openweathermap.org";
-    private static final String OPENWEATHER_APPID = "575a8a4d2f391e11befd2c3d7b305c9f";
+    private static final String OPENWEATHER_APPID = " ";
 
     private MutableLiveData<FiveDayForecast> searchResults;
 
